@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <title>WeatherApp</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>BZ's WeatherApp</h1>
+        <form>
+            <label for="city">Enter location to get weather info</label>
+            <input type="text" name="city">
+        </form>
+        <div class="loading d-none">
+            <i class="fa fa-spinner fa-spin"></i> Loading...
+        </div>
+        <div class="card d-none">
+            <img src="https://via.placeholder.com/400x300" class="time card-img-top" alt="">
+            <div class="icon">
+                <img src="" alt="">
+            </div>
+            <div class="details">
+                <h5>City Name</h5>
+                <div>Weather condition</div>
+                <div>
+                    <span>temp</span>
+                    <span>&deg;C</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/forecast.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
